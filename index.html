@@ -29,7 +29,7 @@
         </div>
     </div>
 </div>
-<!-- -----------about---------- -->
+
 <div id="about">
     <div class="container">
         <div class="row">
@@ -62,7 +62,6 @@
     </div>
 </div>
 
-<!-- ---------Projects Section---------------- -->
 <section id="projects">
     <h2 class="sub-title">Projects</h2>
     <div class="services-list">
@@ -93,7 +92,6 @@
     </div>
 </section>
 
-<!-- ----------Internship Section------------ -->
 <section id="internship">
     <h2 class="sub-title">Internship Experience</h2>
     <div class="internship-list">
@@ -106,7 +104,6 @@
     </div>
 </section> 
 
-<!-- ----------certifications------------ -->
 <section id="certifications" class="certifications-section">
     <h2 class="certifications-title">Certifications</h2>
     <div class="certification"><strong>CSS Crash Course for Beginners</strong> - Udemy, 2024</div>
@@ -116,14 +113,11 @@
 </section>
 
 
-
-<!-- ----------contact------------- -->
 <div id="contact">
     <div class="container">
         <div class="contact-left">
             <h1 class="sub-title">📞Contact Me</h1>
 
-            <!-- Contact Info (Email and Phone hidden initially) -->
             <div id="email" class="hidden-info">
                 <p><i class="fas fa-paper-plane"></i> sandhya.s2023ece@sece.ac.in</p>
             </div>
@@ -131,7 +125,6 @@
                 <p><i class="fas fa-phone-square-alt"></i> 9025612551</p>
             </div>
 
-            <!-- Contact Buttons in a single row -->
             <div class="contact-buttons">
                 <button class="contact-item" onclick="toggleVisibility('email')"><i class="fas fa-paper-plane"></i> Email</button>
                 <button class="contact-item" onclick="toggleVisibility('phone')"><i class="fas fa-phone-square-alt"></i> Phone</button>
@@ -211,29 +204,24 @@
     }
 }
 
-    // Create an Intersection Observer to detect when the #certifications section is in view
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Select all certification items inside the certifications section
                 const certifications = entry.target.querySelectorAll('.certification');
                 
-                // Add the 'show' class to each certification one by one with a delay
                 certifications.forEach((cert, index) => {
                     setTimeout(() => {
                         cert.classList.add('show');
-                    }, index * 1000); // Delay increases with each item
+                    }, index * 1000); 
                 });
                 
-                // Once the section is visible, stop observing it
                 observer.unobserve(entry.target);
             }
         });
     }, {
-        threshold: 0.5 // Trigger when 50% of the section is visible
+        threshold: 0.5 
     });
 
-    // Observe the #certifications section
     const certificationsSection = document.getElementById('certifications');
     observer.observe(certificationsSection);
 
