@@ -70,7 +70,7 @@ nav ul li a:hover::after {
 .header-text h1 span {
     color: #ff004f;
 }
-/* -----------about--------------- */
+
 #about {
     padding: 80px 0;
     color: #ababab;
@@ -139,8 +139,6 @@ nav ul li a:hover::after {
     display: block;
 }
 
-/* ----------------services------------- */
-/* ----------- Projects Section --------------- */
 #projects {
     padding: 50px 20px;
     background-image: url('your-image-link.jpg');
@@ -200,7 +198,6 @@ nav ul li a:hover::after {
     line-height: 1.5;
 }
 
-/* ----------- Internship Section --------------- */
 #internship {
     padding: 50px 20px;
     color: #fff;
@@ -265,7 +262,6 @@ nav ul li a:hover::after {
     transform: translateY(-10px);
 }
 
-/* -------portfolio----------- */
 .certification {
     background: #262626;
     padding: 30px;
@@ -301,11 +297,6 @@ nav ul li a:hover::after {
     }
 }
 
-
-
-
-/* -----------contact section--------- */
-/* -----------contact section--------- */
 #contact {
     padding: 50px 0;
     color: #fff;
@@ -341,7 +332,6 @@ nav ul li a:hover::after {
     font-size: 25px;
 }
 
-/* Styling the hidden email and phone number */
 .hidden-info {
     display: none;
 }
@@ -427,8 +417,6 @@ form button:hover {
     color: #fff;
     margin-top: 20px;
 }
-
-/* Responsiveness for smaller screens */
 @media only screen and (max-width: 768px) {
     .contact-left, .contact-right {
         text-align: center;
